@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "870664786137",
+    "project_id": "car-parking-71c67",
+    "storage_bucket": "car-parking-71c67.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:870664786137:android:b4bce973ce1af47fd36ec8",
+        "android_client_info": {
+          "package_name": "com.example.notes_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBolxXQokGf5O6tMPt1QYAequ40ou-QTZQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

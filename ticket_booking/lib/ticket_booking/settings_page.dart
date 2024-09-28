@@ -1,50 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:ticket_booking/ticket_booking/booking_controller.dart';
-import 'package:ticket_booking/ticket_booking/booking_page.dart';
-import '../booking_page.dart';
 
 class SettingsPage extends StatelessWidget {
-  SettingsPage({super.key});
-  BookingController controller = Get.put(BookingController());
 
-  // This widget is the root of your application.
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text(
-            'Settings ',
-            style: TextStyle(color: Colors.white),
-          ),
-          backgroundColor: Colors.deepPurple,
+    
+      body: const Center( // Centers the text in the body
+        child: Text(
+          'Hello World',
+          style: TextStyle(color: Color.fromARGB(255, 0, 0, 0),fontSize: 24),
         ),
-        body: SafeArea(
-          child: Column(
-            children: [
-              TextField(
-                controller: controller.txtLimit,
-                keyboardType: TextInputType.number,
-                decoration: InputDecoration(
-                  labelText: 'Limit',
-                ),
-              ),
-              TextField(
-                controller: controller.txtPrice,
-                keyboardType: TextInputType.number,
-                decoration: InputDecoration(
-                  labelText: 'Price',
-                ),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  controller.saveSettings();
-                  Get.to(() => BookingPage());
-                },
-                child: Text('Save'),
-              ),
-            ],
-          ),
-        ));
+      ),
+    );
   }
 }

@@ -11,7 +11,7 @@ class BookingList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Booking List'),
+        title: const Text('Booking List'),
       ),
       body: Obx(() {
         return Column(
@@ -21,17 +21,17 @@ class BookingList extends StatelessWidget {
               children: [
                 Text(
                     'Remaining Seats:${controller.limit.value - controller.booked.value}',
-                    style: TextStyle(fontSize: 20)),
+                    style: const TextStyle(fontSize: 20)),
                 Text(
                     'Earning:${controller.price.value * controller.booked.value}',
-                    style: TextStyle(fontSize: 20)),
+                    style: const TextStyle(fontSize: 20)),
               ],
             ),
             Expanded(
               child: ListView.builder(
                 itemCount: controller.bookings.length,
                 itemBuilder: (context, index) => ListTile(
-                  title: Text('${controller.bookings[index].name}'),
+                  title: Text(controller.bookings[index].name),
                   subtitle: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
